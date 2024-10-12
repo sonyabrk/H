@@ -24,7 +24,6 @@
                       Items
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">All</a></li>
                       <li><a class="dropdown-item" href="#">Clothes</a></li>
                       <li><a class="dropdown-item" href="#">Shoes</a></li>
                       <li><a class="dropdown-item" href="#">Accsesories</a></li>
@@ -42,13 +41,6 @@
             </div>
           </nav>
     </header>
-    <style>
-      body {
-        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa6SrIgOBCfbQ77EMZYpc0GVsxnkhuIDUTug&s');
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-    </style>
     <!-- Значек корзины, вызывает модальное окно -->
     <section>
         <div>
@@ -121,58 +113,46 @@
         </div>
         <!-- Закончилась разметка модального окна -->
     </section>
-    <!-- Контент. В h11 и img загрузить текст и картинку -->
     <section>
-        <div class="container text-center">
-            <div class="row">
-              <div class="col">
-                <h1>Welcome!!</h1>
-              </div>
-              <div class="col">
-                <img class="w-100" src=".." alt="..">
-              </div>
-            </div>
-    </section>
-    <!-- Добавить картинки  и текст к ним-->
-    <section>
-        <div class="container text-center">
-            <h2>Bestsellers</h2>
-            <div class="container text-center">
-                <div class="row align-items-center">
-                  <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src=".." class="card-img-top" alt="..">
-                        <div class="card-body">
-                          <h33 class="card-title">Card title</h33>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Buy now</a>
+        <!-- Контент на странице -->
+        <div class="container mt-5">
+            <div class="card mb-4 custom-shadow">
+                <div class="row">
+                    <!-- Миниатюры -->
+                    <div class="col-md-4">
+                        <img src="../deps/images/goods/set of tea table and three chairs.jpg"
+                            class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                    </div>
+                    <div class="col-md-4 ">
+                        <p class="product_id mt-3">id: 002654</p>
+                    </div>
+                    <!-- Увеличить изображение в модальном окне -->
+                    <div class="modal fade" id="imageModal1" tabindex="-1"
+                        aria-labelledby="imageModal1Label" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="imageModal1Label">Image 1</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Закрыть"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../deps/images/goods/set of tea table and three chairs.jpg"
+                                        class="img-fluid" alt="Изображение 1">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                  </div>
-                  <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h44 class="card-title">Card title</h44>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Buy now</a>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h55 class="card-title">Card title</h55>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Buy now</a>
-                        </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
+                <!-- Описание товара -->
+                <div class="card-body">
+                    <p class="card-text">Total: <strong>150.00 $</strong></p>
+                    <h5 class="card-title">Someting</h5>
+                    <p class="card-text">...</p>
+                    <a href="#" class="btn btn-dark add-to-cart">Add to cart</a>
+                </div>
+            </div>
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
